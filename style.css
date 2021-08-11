@@ -1,0 +1,249 @@
+/* Área de configs globais */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap'); /* Fonte para títulos e links - 'Oswald' */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Oswald&display=swap'); /* Fontes para textos - fon'Cormorant Garamond' */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Oswald', sans-serif;
+    color: #F2F2F2 !important;
+
+    -webkit-text-stroke-color: #0D0D0D;
+    -webkit-text-stroke-width: 0.1px;
+}
+
+a:link{
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+body{
+    background-color: #0D0D0D;
+}
+
+/* Área de Logo e Menus */
+.top-conteiner{
+    background-color: #202020de;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 35px 0px;
+    font-size: 25px;
+}
+
+.top-conteiner-logo{
+    margin: 0px 20px;    
+}
+
+.top-conteiner-menu2{
+    margin: 0px 20px;
+}
+
+/* Área do meio, após o menu */
+
+/* Área cinza com apresentação */
+.mid-conteiner{
+
+    width: 100%;
+    height: 90vh;
+    background-color: #59595988;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#mid-conteiner-text1{
+    font-size: 25px;
+    margin-top: 10%;
+    margin-left: 3%;
+    align-self: flex-start;
+}
+
+#mid-conteiner-text2{
+    font-family: 'Cormorant Garamond', sans-serif;
+    text-decoration: underline;
+    font-size: 55px;
+    text-align: center;
+    align-self: center;
+}
+
+#mid-conteiner-text3{
+    font-size: 18px;
+    margin-top: 10%;
+    text-align: center;
+    align-self: flex-start;
+}
+
+#mid-conteiner-text4{
+    text-align: center;
+    margin: 0px 5%;
+    align-self: flex-start;
+    margin-top: 40px;
+}
+
+#mid-conteiner-myphoto{
+    align-items: flex-start;
+    border-radius: 100%;
+    border-style: solid;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+
+#mid-conteiner-myphoto img{
+    width: 90%;
+    border-radius: 100%;
+}
+
+#mid-conteiner-imgbg{
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 90vh;
+}
+
+#mid-conteiner-bggrey{
+    z-index: 1;
+    background-color: #262626de;
+    width: 30%;
+    height: 90vh;
+}
+
+/* Área das habilidades */
+
+#mid-conteiner-contentlinks{
+    background-color: #8613b33f;
+    width: 70%;
+    height: 90vh;
+}
+
+#mid-conteiner-contentlinks-text1{
+    font-size: 45px;
+    margin: 5% 0% 0% 15%;
+    text-decoration: underline 2px;
+}
+
+#mid-conteiner-contentlinks-text2{
+    background-color: #262626de;
+    font-size: 25px;
+    margin: 130px 25px 0px 25px;
+    padding: 10px;
+    font-family: "Cormorant Garamond";
+}
+
+#mid-conteiner-contentlinks-boxhabilities-imgbg{
+    display: none;
+}
+
+/* Área das medalhas */
+
+#mid-conteiner-contentlinks-boxhabilities{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#mid-conteiner-contentlinks-boxhabilities div{
+    background-color: #0d0d0d2c;
+    border-color: #ffffff65;
+    border-style: solid;
+    border-radius: 100%;
+
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mid-conteiner-contentlinks-boxhabilities div img{
+    border-radius: 100%;
+    width: 95%;
+}
+
+
+@media (max-width: 900px){
+
+    /* Conteiner geral */
+    .mid-conteiner{
+        flex-direction: column;
+    }
+
+    /* Conteiner cinza com apresentação */
+    #mid-conteiner-bggrey{
+        width: 100%;
+        min-height: 90vh;   
+    }
+
+    /* Imagem de fundo do conteiner cinza */
+    #mid-conteiner-imgbg{
+        width: 100%;
+        height: 100vh;
+    }
+
+    /* Conteiner geral da área Habildades*/
+    #mid-conteiner-contentlinks{
+        width: 100%;
+        min-height: 620px;
+    }
+
+    /* Imagem de fundo da Área Habilidades */
+    #mid-conteiner-contentlinks-boxhabilities-imgbg{
+        display: block;
+        position: absolute;
+        z-index: -2;
+        width: 100%;
+        min-height: 800px;
+    }
+
+    #mid-conteiner-contentlinks-text2{
+        font-size: 25px;
+        margin: 40px 25px 0px 25px;
+        padding: 10px;
+    }
+
+    #mid-conteiner-myphoto{
+        width: 200px;
+        height: 200px;
+    }
+    
+    #mid-conteiner-myphoto img{
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 540px){
+
+#mid-conteiner-contentlinks-boxhabilities div{
+    flex-basis: 100px;
+    flex-shrink: 1;
+
+    border: none;
+}
+
+#mid-conteiner-contentlinks-boxhabilities div img{
+    flex-basis: 100px;
+    flex-shrink: 1;
+}
+
+
+}
